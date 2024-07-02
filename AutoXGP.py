@@ -12,7 +12,7 @@ import pywinauto
 from pywinauto.keyboard import send_keys
 import os
 
-
+    
 def copy_text(text):
     pyperclip.copy(text)
 
@@ -23,6 +23,7 @@ def set_console_title(title):
 
 set_console_title("keji autoXGP")
 warnings.filterwarnings('ignore')
+
 
 
 def randomUsername(length=16):
@@ -55,14 +56,13 @@ print('''
 ██╔═██╗ ██╔══╝  ██   ██║██║    ██╔══██║██║   ██║   ██║   ██║   ██║ ██╔██╗ ██║   ██║██╔═══╝ 
 ██║  ██╗███████╗╚█████╔╝██║    ██║  ██║╚██████╔╝   ██║   ╚██████╔╝██╔╝ ██╗╚██████╔╝██║     
 ╚═╝  ╚═╝╚══════╝ ╚════╝ ╚═╝    ╚═╝  ╚═╝ ╚═════╝    ╚═╝    ╚═════╝ ╚═╝  ╚═╝ ╚═════╝ ╚═╝                                                                                         
-[+]自动刷XGP机
 [+]使用时请使用新号
-[+]请挂好香港VPN
+[+]请自备VPN
 [+]唯一手动的地方就是扫码登录以及确认协议
 [+]版本1.0
 ''')
 
-acc = input('邮箱----密码:')
+acc = input('邮箱----密码(注意是4条线):')
 parts = acc.split("----")
 Email = parts[0]
 Password = parts[1]
@@ -75,6 +75,7 @@ edge_options = webdriver.EdgeOptions()
 edge_options.use_chromium = False
 edge_options.add_experimental_option('useAutomationExtension', False)
 edge_options.add_argument('--inprivate')
+
 edge_options.add_experimental_option('excludeSwitches', ['enable-automation', 'enable-logging'])
 
 driver = webdriver.Edge('msedgedriver.exe', options=edge_options)
