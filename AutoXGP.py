@@ -75,11 +75,10 @@ edge_options = webdriver.EdgeOptions()
 edge_options.use_chromium = False
 edge_options.add_experimental_option('useAutomationExtension', False)
 edge_options.add_argument('--inprivate')
-
 edge_options.add_experimental_option('excludeSwitches', ['enable-automation', 'enable-logging'])
 
 driver = webdriver.Edge('msedgedriver.exe', options=edge_options)
-print('[Debugger]即将打开浏览器并自动购买......')
+print('即将打开浏览器并自动购买......')
 driver.get('https://www.xbox.com/zh-HK/xbox-game-pass#join')
 print("在页面上查找29港币的PC Game pass")
 time.sleep(2)
