@@ -67,7 +67,7 @@ parts = acc.split("----")
 Email = parts[0]
 Password = parts[1]
 print("请使用新号")
-print("除了要求请问擅自操作页面))")
+print("除了要求请勿擅自操作页面))")
 Xbox_User = 'AzusaZi' + randomUsername(6)
 IGN = 'A' + randomUsername(2) + 'D' + randomUsername(2)
 
